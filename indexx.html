@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ENSTP 360° · ENSTP Compass</title>
+<meta name="description" content="ENSTP 360° — ENSTP Compass : guide, annuaire noté par les étudiants et ressources de l’ENSTP.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%230B3D91' stroke-width='3'/%3E%3Cpath d='M16 5l4.5 11h-9z' fill='%23F26A1B'/%3E%3Cpath d='M16 27l-4.5-11h9z' fill='%230B3D91'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+<style>
+:root{--blue:#0B3D91;--b2:#1F66DD;--sky:#EAF1FF;--or:#F26A1B;--orl:#FFF1E6;--ink:#0F1F3D;--mut:#5A6985;--line:#DCE4F3;--bg:#F6F8FC;--ok:#168A57;--bad:#C73E3E}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.55 "Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:70px}
+[dir=rtl] body{font-family:"IBM Plex Sans Arabic","Plus Jakarta Sans",system-ui,sans-serif}
+a{color:var(--b2);text-decoration:none}h1{font-size:clamp(1.6rem,4.5vw,2.5rem);line-height:1.15;margin:.2em 0 .4em;letter-spacing:-.02em;color:var(--blue)}h2,h3{margin:.3em 0}
+.wrap{max-width:1120px;margin:auto;padding:18px 16px}.narrow{max-width:760px}
+#top{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;padding-block:9px}.brand{display:flex;align-items:center;gap:8px;color:var(--blue)}.brand b{font-size:1.1rem}
+.brand small{background:var(--or);color:#fff;font-weight:700;font-size:.62rem;padding:2px 7px;border-radius:99px;letter-spacing:.04em}
+.nav{display:none;gap:4px;margin-inline-start:10px}.nav a{padding:8px 13px;border-radius:9px;color:var(--mut);font-weight:600}.nav a.on{color:var(--blue);background:var(--sky)}
+.tools{margin-inline-start:auto;display:flex;gap:8px;align-items:center}.ib{display:grid;place-items:center;width:40px;height:40px;color:var(--blue)}
+select,input,textarea{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:inherit;width:100%;min-height:42px}.tools select{width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;min-height:42px;border:0;border-radius:10px;background:var(--blue);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.btn.or{background:var(--or)}.btn.gh{background:var(--sky);color:var(--blue)}.btn.bad{background:#fde8e8;color:var(--bad)}.btn.sm{min-height:36px;padding:6px 12px;font-size:.88rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px}.pad{padding:18px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}.stk{display:grid;gap:10px}
+.hero{display:grid;gap:24px;align-items:center;padding-block:28px}.lead{color:var(--mut);font-size:1.05rem;max-width:52ch}
+.sr{display:flex;gap:8px;margin:16px 0 10px}.sr .btn{white-space:nowrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:99px;background:#fff;border:1px solid var(--line);color:var(--ink);font:inherit;font-weight:600;font-size:.85rem;cursor:pointer}.chip.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin:12px 0}.tabs button,.tabs a{white-space:nowrap;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;font:inherit;font-weight:700;color:var(--mut);cursor:pointer}.tabs .on{background:var(--or);border-color:var(--or);color:#fff}
+.gc{display:block;color:inherit}.gc:hover,.place:hover{border-color:var(--b2)}.ico{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--sky);color:var(--blue)}
+.place{cursor:pointer;padding:16px}.lnk{all:unset;font-weight:800;font-size:1.05rem;cursor:pointer}
+.filters{display:grid;gap:8px;grid-template-columns:1fr 1fr;margin-bottom:14px}.filters .btn{grid-column:1/-1}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sp{justify-content:space-between}.mut{color:var(--mut)}.st{color:var(--or);font-weight:800}.price{margin-inline-start:auto;color:var(--blue);font-weight:700}
+.fm{display:grid;gap:12px}.fm label{display:grid;gap:5px;font-weight:600;font-size:.9rem}
+.badge{padding:3px 10px;border-radius:99px;font-size:.78rem;font-weight:700;background:var(--sky);color:var(--blue)}.badge.pending{background:var(--orl);color:#b84a08}.badge.approved{background:#dff5ea;color:var(--ok)}.badge.rejected{background:#fde8e8;color:var(--bad)}
+.ov{position:fixed;inset:0;background:#0b1a3a99;display:grid;place-items:center;padding:12px;z-index:50}.mb{width:min(560px,100%);max-height:92vh;overflow:auto;padding:20px;position:relative}
+.x{position:absolute;inset-inline-end:10px;top:6px;border:0;background:none;font-size:30px;cursor:pointer;color:var(--mut)}
+.toast{position:fixed;bottom:84px;inset-inline:0;margin:auto;width:fit-content;max-width:92%;background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px;z-index:60}.toast.bad{background:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:16px}.stat b{font-size:2rem;color:var(--blue)}.stat span{display:block;color:var(--mut)}
+.empty,.end{color:var(--mut);text-align:center;padding:22px}.c{text-align:center}.note{padding:12px 14px;border-radius:10px;background:var(--orl)}.note.bad{background:#fde8e8;color:var(--bad)}
+.spin{width:30px;height:30px;border:3px solid var(--line);border-top-color:var(--or);border-radius:50%;margin:60px auto;animation:r 1s linear infinite}@keyframes r{to{transform:rotate(360deg)}}
+.rs{display:flex;flex-direction:row-reverse;justify-content:flex-end}.rs input{position:absolute;opacity:0;width:1px}.rs label{font-size:30px;line-height:1;color:#cbd5e6;cursor:pointer;padding:2px}.rs input:checked~label,.rs label:hover,.rs label:hover~label{color:var(--or)}
+.rv{border-top:1px solid var(--line);padding:10px 0}.two{display:grid;gap:18px}.log{padding-inline-start:18px;color:var(--mut)}
+.dial{position:relative;width:min(290px,78vw);aspect-ratio:1;margin:26px auto;color:var(--line)}.dial svg{width:100%;height:100%}
+.d{position:absolute;display:flex;flex-direction:column;align-items:center;gap:2px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px 10px;font-weight:700;font-size:.78rem;color:var(--blue);box-shadow:0 4px 14px #0b3d9114;text-align:center;max-width:112px}
+.d.n{top:-5%;left:50%;transform:translateX(-50%)}.d.s{bottom:-5%;left:50%;transform:translateX(-50%)}.d.e{right:-8%;top:50%;transform:translateY(-50%)}.d.w{left:-8%;top:50%;transform:translateY(-50%)}
+.tabbar{position:fixed;bottom:0;inset-inline:0;z-index:30;display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.tabbar a{display:flex;flex-direction:column;align-items:center;gap:1px;padding:8px 2px;font-size:.68rem;font-weight:600;color:var(--mut)}.tabbar a.on{color:var(--or)}
+.foot{color:var(--mut);font-size:.85rem;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+@media(min-width:860px){body{padding-bottom:0}.nav{display:flex}.tabbar{display:none}.hero{grid-template-columns:1.2fr .8fr}.two{grid-template-columns:1.3fr 1fr}.filters{grid-template-columns:2fr 2fr 1.4fr 1fr auto}.filters .btn{grid-column:auto}.toast{bottom:24px}}
+</style>
+</head>
+<body>
+<header id="top"></header><main id="app"></main><footer id="foot" class="wrap foot"></footer><nav id="tab" class="tabbar"></nav>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script>
+const T={
+home:['Accueil','Home','الرئيسية'],guide:['Guide','Guide','الدليل'],dir:['Annuaire','Directory','العناوين'],help:['Un coup de main','A helping hand','يد المساعدة'],account:['Compte','Account','حسابي'],admin:['Administration','Administration','الإدارة'],
+search:['Rechercher','Search','بحث'],searchPh:['Une salle, un service, un bus…','A room, a service, a bus…','قاعة، خدمة، حافلة…'],login:['Connexion','Log in','تسجيل الدخول'],signup:['Créer un compte','Sign up','إنشاء حساب'],logout:['Se déconnecter','Log out','تسجيل الخروج'],
+email:['Email','Email','البريد الإلكتروني'],pw:['Mot de passe (8 car. min.)','Password (8 chars min.)','كلمة المرور (8 أحرف على الأقل)'],fullName:['Nom complet','Full name','الاسم الكامل'],level:['Niveau','Level','المستوى'],
+schoolOnly:['Réservé aux emails @enstp.edu.dz.','Restricted to @enstp.edu.dz emails.','مخصص للبريد @enstp.edu.dz.'],domainErr:['Utilisez votre email @enstp.edu.dz.','Use your @enstp.edu.dz email.','استخدم بريدك @enstp.edu.dz.'],checkMail:['Compte créé. Vérifiez votre email pour confirmer.','Account created. Check your email to confirm.','تم إنشاء الحساب. تحقق من بريدك لتأكيده.'],
+h1:['Vos repères à l’ENSTP','Your ENSTP essentials','مرجعك في المدرسة'],sub:['Guide pratique, annuaire noté par les étudiants et ressources validées.','Practical guide, student-rated directory and verified resources.','دليل عملي، عناوين بتقييم الطلبة وموارد معتمدة.'],
+ann:['Annonces','Announcements','الإعلانات'],guideT:['Rubriques du guide','Guide sections','أقسام الدليل'],seeAll:['Tout voir','See all','عرض الكل'],back:['Retour','Back','رجوع'],all:['Tout','All','الكل'],
+empty:['Rien à afficher pour le moment.','Nothing to show yet.','لا شيء للعرض حاليًا.'],noRes:['Aucun résultat.','No results.','لا توجد نتائج.'],foot:['Projet étudiant · ENSTP, Alger','Student project · ENSTP, Algiers','مشروع طلابي · ENSTP، الجزائر'],
+g_campus:['Campus','Campus','الحرم'],g_daily:['Quotidien','Daily life','الحياة اليومية'],g_life:['Vie étudiante','Student life','الحياة الطلابية'],g_discover:['Découvertes','Discover','اكتشاف'],
+sName:['Nom de l’établissement','Establishment name','اسم المؤسسة'],sLoc:['Lieu / quartier','Location / area','المكان / الحي'],sRating:['Mieux notés','Top rated','الأعلى تقييمًا'],sPop:['Populaires','Popular','الأكثر شعبية'],sAlpha:['A → Z','A → Z','أ → ي'],
+maxP:['Prix max (DA)','Max price (DA)','أقصى سعر (دج)'],nr:['Pas encore noté','Not rated yet','لم يُقيَّم بعد'],rats:['avis étudiants','student ratings','تقييمات الطلبة'],more:['Voir plus','Load more','عرض المزيد'],
+end:['Fin des résultats de cette catégorie.','End of results for this category.','نهاية نتائج هذه الفئة.'],call:['Appeler','Call','اتصال'],onMap:['Voir sur la carte','View on map','عرض على الخريطة'],
+yourRating:['Votre note','Your rating','تقييمك'],comment:['Commentaire (facultatif)','Comment (optional)','تعليق (اختياري)'],send:['Envoyer','Submit','إرسال'],loginToRate:['Connectez-vous pour noter.','Log in to rate.','سجّل الدخول للتقييم.'],
+hiddenN:['Votre avis a été masqué par la modération.','Your review was hidden by moderation.','تم إخفاء تقييمك من طرف الإشراف.'],myRat:['Mes notes','My ratings','تقييماتي'],myReq:['Mes demandes','My requests','طلباتي'],susp:['Compte suspendu','Account suspended','الحساب موقوف'],
+reqH:['Proposer une ressource','Suggest a resource','اقتراح مورد'],reqIntro:['Décrivez la ressource : un administrateur la vérifiera et la publiera. Les étudiants n’envoient aucun fichier.','Describe the resource: an administrator will review and publish it. Students cannot upload files.','صف المورد: سيراجعه مسؤول وينشره. لا يمكن للطلبة رفع ملفات.'],
+reqSent:['Demande envoyée : en attente de validation.','Request sent: pending review.','تم إرسال الطلب: في انتظار المراجعة.'],submitReq:['Envoyer la demande','Send request','إرسال الطلب'],resList:['Ressources publiées','Published resources','الموارد المنشورة'],
+download:['Télécharger','Download','تحميل'],loginFirst:['Connectez-vous pour proposer une ressource.','Log in to suggest a resource.','سجّل الدخول لاقتراح مورد.'],
+pending:['En attente','Pending','قيد الانتظار'],approved:['Approuvée','Approved','مقبولة'],rejected:['Refusée','Rejected','مرفوضة'],archived:['Archivée','Archived','مؤرشفة'],
+overview:['Vue d’ensemble','Overview','نظرة عامة'],requests:['Demandes','Requests','الطلبات'],resources:['Ressources','Resources','الموارد'],places:['Adresses','Places','العناوين'],ratings:['Avis','Ratings','التقييمات'],users:['Utilisateurs','Users','المستخدمون'],
+st_students:['Étudiants inscrits','Registered students','الطلبة المسجلون'],st_pending:['Demandes en attente','Pending requests','طلبات معلّقة'],st_res:['Ressources publiées','Published resources','موارد منشورة'],
+recent:['Activité récente','Recent activity','النشاط الأخير'],approvePub:['Approuver et publier','Approve & publish','قبول ونشر'],reject:['Refuser','Reject','رفض'],archive:['Archiver','Archive','أرشفة'],delete:['Supprimer','Delete','حذف'],edit:['Modifier','Edit','تعديل'],
+save:['Enregistrer','Save','حفظ'],newItem:['Nouveau','New','جديد'],confirm:['Confirmer la suppression ?','Confirm deletion?','تأكيد الحذف؟'],denied:['Accès réservé aux administrateurs.','Administrators only.','للمسؤولين فقط.'],
+note:['Motif (visible par l’étudiant)','Reason (visible to the student)','السبب (يظهر للطالب)'],title:['Titre','Title','العنوان'],desc:['Description','Description','الوصف'],cat:['Catégorie','Category','الفئة'],module:['Module / matière','Subject / module','المقياس'],
+contact:['Contact (facultatif)','Contact (optional)','وسيلة اتصال (اختياري)'],vis:['Visibilité','Visibility','الظهور'],public:['Public','Public','عام'],stud:['Étudiants connectés','Signed-in students','الطلبة المسجلون'],
+file:['Fichier (PDF, Word, PowerPoint, Excel · 10 Mo max)','File (PDF, Word, PowerPoint, Excel · 10 MB max)','الملف (PDF وWord وPowerPoint وExcel · 10 ميغا كحد أقصى)'],big:['Fichier trop volumineux (10 Mo max).','File too large (10 MB max).','الملف كبير جدًا (10 ميغا كحد أقصى).'],
+draft:['Brouillon','Draft','مسودة'],published:['Publié','Published','منشور'],unpub:['Dépublier','Unpublish','إلغاء النشر'],publish:['Publier','Publish','نشر'],name:['Nom','Name','الاسم'],addr:['Adresse','Address','العنوان'],pmin:['Prix min (DA)','Min price (DA)','أدنى سعر (دج)'],
+phone:['Téléphone','Phone','الهاتف'],role:['Rôle','Role','الدور'],student:['Étudiant','Student','طالب'],adminR:['Administrateur','Administrator','مسؤول'],suspended:['Suspendu','Suspended','موقوف'],saved:['Enregistré.','Saved.','تم الحفظ.'],
+error:['Une erreur est survenue.','Something went wrong.','حدث خطأ.'],cfg:['Renseignez config.js (voir README).','Fill in config.js (see README).','املأ ملف config.js (انظر README).'],close:['Fermer','Close','إغلاق'],hide:['Masquer','Hide','إخفاء'],show:['Afficher','Show','إظهار'],
+c_cours:['Cours','Lectures','دروس'],c_td:['TD','Tutorials','أعمال موجهة'],c_tp:['TP','Labs','أعمال تطبيقية'],c_exams:['Examens','Exams','امتحانات'],c_other:['Autre','Other','أخرى']};
+const $=(s,e=document)=>e.querySelector(s),C=window.ENSTP_CONFIG||{},app=$('#app'),spin='<div class="spin" role="status"></div>';
+const sb=C.SUPABASE_URL?supabase.createClient(C.SUPABASE_URL,C.SUPABASE_ANON_KEY):null;
+let lang=localStorage.getItem('lang')||'fr',me=null,prof=null,cats=[],guides=[],RS=[],MF=null;
+const LI={fr:0,en:1,ar:2},t=k=>(T[k]||[k,k,k])[LI[lang]],L=o=>o?o[lang]||o.fr||{}:{},Ld=o=>o?o[lang]||o.fr||'':'',arr=()=>lang=='ar'?'←':'→';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ok=async q=>{const{data,error}=await q;if(error)throw error;return data};
+const toast=(m,bad)=>{const d=document.createElement('div');d.className='toast'+(bad?' bad':'');d.textContent=m;document.body.append(d);setTimeout(()=>d.remove(),3500)};
+const go=fn=>async(...a)=>{try{await fn(...a)}catch(e){console.error(e);toast(e.message||t('error'),1)}};
+const shut=()=>$('#md')?.remove();
+const modal=h=>{shut();const d=document.createElement('div');d.id='md';d.className='ov';d.innerHTML=`<div class="mb card" role="dialog" aria-modal="true"><button class="x" data-a="x" aria-label="${t('close')}">×</button>${h}</div>`;document.body.append(d)};
+const IC={home:'<path d="M3 11l9-8 9 8M5 10v10h14V10"/>',map:'<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/>',door:'<path d="M5 21V4a1 1 0 011-1h12a1 1 0 011 1v17M3 21h18"/><circle cx="15" cy="12" r=".8"/>',building:'<path d="M4 21V5l8-3 8 3v16M2 21h20M9 9h2M13 9h2M9 13h2M13 13h2"/>',food:'<path d="M7 3v8a2 2 0 002 2v8M5 3v6M9 3v6M17 21V3c-2 1-3.500 4-3.500 8H17"/>',bus:'<rect x="4" y="3" width="16" height="14" rx="2"/><path d="M4 11h16M7 21v-4M17 21v-4"/>',sport:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/>',users:'<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.500 3-6 6-6s6 2.500 6 6M16 5a3 3 0 010 6M21 20c0-2.500-1.500-4.500-4-5.500"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.500 1.500M17.500 17.500L19 19M5 19l1.500-1.500M17.500 6.500L19 5"/>',help:'<circle cx="12" cy="12" r="9"/><path d="M9.500 9a2.500 2.500 0 113.500 2.300c-.7.400-1 1-1 1.700M12 17v.01"/>',print:'<path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M6 14h12v7H6z"/>',search:'<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.300-4.300"/>'};
+const ic=(n,s=22)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]||IC.map}</svg>`;
+const LOGO='<svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#0B3D91" stroke-width="3"/><path d="M16 5l4.500 11h-9z" fill="#F26A1B"/><path d="M16 27l-4.500-11h9z" fill="#0B3D91"/></svg>';
+const F=(f,v={})=>`<label>${esc(f.l)}${f.t=='select'?`<select name="${f.k}"${f.r?' required':''}>${f.o.map(o=>`<option value="${esc(o[0])}"${v[f.k]==o[0]?' selected':''}>${esc(o[1])}</option>`).join('')}</select>`:f.t=='textarea'?`<textarea name="${f.k}" rows="3"${f.r?' required':''}>${esc(v[f.k])}</textarea>`:`<input name="${f.k}" type="${f.t||'text'}"${f.t=='file'?' accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx"':` value="${esc(v[f.k])}"`}${f.r?' required':''}${f.t=='password'?' minlength="8"':''}>`}</label>`;
+const fm=(n,fs,v,b)=>`<form data-f="${n}" class="fm">${fs.map(f=>F(f,v)).join('')}<button class="btn or">${b||t('save')}</button></form>`;
+const vals=f=>Object.fromEntries(new FormData(f));
+const mform=(h,fs,v,cb)=>{MF=cb;modal(`<h3>${esc(h)}</h3>${fm('mf',fs,v)}`)};
+const CATS=()=>['cours','td','tp','exams','other'].map(k=>[k,t('c_'+k)]),LV=()=>['CP1','CP2','CS1','CS2','CS3'].map(k=>[k,k]);
+const tp=p=>p.price_min?(p.price_max&&p.price_max!=p.price_min?p.price_min+' – '+p.price_max:p.price_min)+' DA':'';
+const stars=p=>p.rating_count>0?`<span class="st">★ ${(+p.avg_rating).toFixed(1)}</span><span class="mut">(${p.rating_count} ${t('rats')})</span>`:`<span class="mut">${t('nr')}</span>`;
+
+function chrome(){
+ document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';
+ $('#top').innerHTML=`<div class="wrap bar"><a class="brand" href="#/" aria-label="ENSTP 360° Compass">${LOGO}<b>ENSTP 360°</b><small>Compass</small></a><nav class="nav" aria-label="Menu">${['guide','dir','help'].map(k=>`<a data-nav="${k}" href="#/${k}">${t(k)}</a>`).join('')}${prof?.role=='admin'?`<a data-nav="admin" href="#/admin">${t('admin')}</a>`:''}</nav><div class="tools"><a class="ib" href="#/guide" aria-label="${t('search')}">${ic('search')}</a><select id="lg" aria-label="Langue / Language / اللغة">${[['fr','FR'],['en','EN'],['ar','ع']].map(([c,l])=>`<option value="${c}"${c==lang?' selected':''}>${l}</option>`).join('')}</select><a class="btn sm" href="#/account">${esc(prof?.full_name?.split(' ')[0]||t('login'))}</a></div></div>`;
+ $('#tab').innerHTML=[['home','home'],['guide','map'],['dir','food'],['help','help'],['account','users']].map(([k,i])=>`<a data-nav="${k}" href="#/${k=='home'?'':k}">${ic(i,22)}${t(k)}</a>`).join('');
+ $('#foot').innerHTML=`<b>ENSTP 360°</b> · ENSTP Compass — ${t('foot')}`}
+
+const gcard=g=>{const c=L(g.tr);return `<a class="card pad gc" href="#/guide/${g.slug}"><span class="ico">${ic(g.icon,24)}</span><h3>${esc(c.title)}</h3><p class="mut">${esc(c.description)}</p></a>`};
+async function home(){
+ const an=await ok(sb.from('announcements').select('*').eq('active',true).order('pinned',{ascending:false}).order('published_at',{ascending:false}).limit(3));
+ app.innerHTML=`<section class="wrap hero"><div><h1>${t('h1')}</h1><p class="lead">${t('sub')}</p><form data-f="gs" class="sr"><input name="q" type="search" placeholder="${t('searchPh')}" aria-label="${t('search')}"><button class="btn or">${t('search')}</button></form><div class="chips">${guides.slice(0,4).map(g=>`<a class="chip" href="#/guide/${g.slug}">${ic(g.icon,16)}${esc(L(g.tr).short||L(g.tr).title)}</a>`).join('')}</div></div>
+ <div class="dial"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="68" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 7"/><path d="M100 46l13 54H87z" fill="#F26A1B"/><path d="M100 154l-13-54h26z" fill="#0B3D91"/><circle cx="100" cy="100" r="5" fill="#fff" stroke="#0B3D91" stroke-width="2"/></svg>
+ <a class="d n" href="#/guide">${ic('map')}${t('guide')}</a><a class="d e" href="#/dir">${ic('food')}${t('dir')}</a><a class="d s" href="#/help">${ic('help')}${t('help')}</a><a class="d w" href="#/account">${ic('users')}${t('account')}</a></div></section>
+ <section class="wrap"><h2>${t('ann')}</h2>${an.length?`<div class="grid">${an.map(a=>{const c=L(a.tr);return `<article class="card pad"><time class="mut">${new Date(a.published_at).toLocaleDateString(lang)}</time><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></article>`}).join('')}</div>`:`<p class="empty">${t('empty')}</p>`}</section>
+ <section class="wrap"><h2>${t('guideT')}</h2><div class="grid">${guides.slice(0,6).map(gcard).join('')}</div><p><a href="#/guide">${t('seeAll')} ${arr()}</a></p></section>`}
+
+async function guide([slug],q){
+ if(slug){const g=guides.find(x=>x.slug==slug);if(!g){location.hash='#/guide';return}const c=L(g.tr);
+  app.innerHTML=`<div class="wrap narrow"><a href="#/guide">${lang=='ar'?'→':'←'} ${t('back')}</a><h1>${esc(c.title)}</h1><p class="lead">${esc(c.description)}</p><div class="stk">${(c.sections||[]).map(s=>`<section class="card pad"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></section>`).join('')}</div><div class="chips">${(g.searches||[]).map(s=>`<a class="chip" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.query)}">${ic('map',16)}${esc(s.query)}</a>`).join('')}</div></div>`;return}
+ const s=(q.get('q')||'').toLowerCase(),g=q.get('g')||'',list=guides.filter(x=>(!g||x.grp==g)&&(!s||JSON.stringify(L(x.tr)).toLowerCase().includes(s)));
+ app.innerHTML=`<div class="wrap"><h1>${t('guide')}</h1><form data-f="gs" class="sr"><input name="q" type="search" value="${esc(s)}" placeholder="${t('searchPh')}" aria-label="${t('search')}"><button class="btn or">${t('search')}</button></form><div class="chips">${['','campus','daily','life','discover'].map(k=>`<a class="chip${g==k?' on':''}" href="#/guide?g=${k}${s?'&q='+encodeURIComponent(s):''}">${t(k?'g_'+k:'all')}</a>`).join('')}</div>${list.length?`<div class="grid">${list.map(gcard).join('')}</div>`:`<p class="empty">${t('noRes')}</p>`}</div>`}
+
+const D={cat:null,q:'',loc:'',sort:'rating',max:'',off:0,rows:[],tot:0};
+async function dir(){
+ D.cat=D.cat||cats[0]?.slug;const hp=cats.find(c=>c.slug==D.cat)?.has_price;
+ app.innerHTML=`<div class="wrap"><h1>${t('dir')}</h1><div class="tabs" role="tablist">${cats.map(c=>`<button role="tab" aria-selected="${c.slug==D.cat}" class="${c.slug==D.cat?'on':''}" data-a="cat" data-v="${c.slug}">${esc(L(c.tr).name)}</button>`).join('')}</div>
+ <form data-f="dirf" class="filters"><input name="q" value="${esc(D.q)}" placeholder="${t('sName')}" aria-label="${t('sName')}"><input name="loc" value="${esc(D.loc)}" placeholder="${t('sLoc')}" aria-label="${t('sLoc')}"><select name="sort" aria-label="Tri">${[['rating',t('sRating')],['popular',t('sPop')],['name',t('sAlpha')]].map(o=>`<option value="${o[0]}"${D.sort==o[0]?' selected':''}>${o[1]}</option>`).join('')}</select>${hp?`<input name="max" type="number" min="0" step="50" value="${D.max}" placeholder="${t('maxP')}" aria-label="${t('maxP')}">`:'<span></span>'}<button class="btn">${t('search')}</button></form><div id="list">${spin}</div></div>`;
+ await fetchPlaces(true)}
+async function fetchPlaces(reset,n=12){
+ if(reset)D.off=0;
+ const r=await ok(sb.rpc('search_places',{p_category:D.cat,p_q:D.q,p_loc:D.loc,p_sort:D.sort,p_max_price:D.max?+D.max:null,p_limit:n,p_offset:D.off}));
+ D.rows=reset?r:D.rows.concat(r);D.tot=r.length?r[0].total:D.rows.length;renderList()}
+function renderList(){const el=$('#list');if(!el)return;
+ el.innerHTML=D.rows.length?`<div class="grid">${D.rows.map(p=>`<article class="card place" data-a="open" data-v="${p.id}"><button class="lnk">${esc(p.name)}</button><p class="mut">${esc(p.address||'')}</p><div class="row">${stars(p)}<span class="price">${tp(p)}</span></div></article>`).join('')}</div>${D.rows.length<D.tot?`<p class="c"><button class="btn gh" data-a="more">${t('more')}</button></p>`:`<p class="end">${t('end')}</p>`}`:`<p class="empty">${t('noRes')}</p>`}
+
+async function help(){
+ RS=await ok(sb.from('resources').select('*').eq('published',true).order('created_at',{ascending:false}));
+ app.innerHTML=`<div class="wrap"><h1>${t('help')}</h1><div class="two"><section><h2>${t('resList')}</h2>${RS.length?`<div class="stk">${RS.map(r=>`<article class="card pad row sp"><div><b>${esc(r.title)}</b><div class="mut">${t('c_'+r.category)} · ${esc(r.level)}${r.module?' · '+esc(r.module):''}</div><p>${esc(r.description||'')}</p></div><button class="btn sm gh" data-a="dl" data-v="${r.id}">${t('download')}</button></article>`).join('')}</div>`:`<p class="empty">${t('empty')}</p>`}</section>
+ <section class="card pad"><h2>${t('reqH')}</h2><p class="mut">${t('reqIntro')}</p>${me?fm('req',[{k:'title',l:t('title'),r:1},{k:'description',l:t('desc'),t:'textarea',r:1},{k:'category',l:t('cat'),t:'select',o:CATS(),r:1},{k:'level',l:t('level'),t:'select',o:LV(),r:1},{k:'module',l:t('module')},{k:'contact',l:t('contact')}],{},t('submitReq')):`<p>${t('loginFirst')} <a href="#/account">${t('login')}</a></p>`}</section></div></div>`}
+
+async function account(){
+ if(!me){const ef={k:'email',l:t('email'),t:'email',r:1},pf={k:'password',l:t('pw'),t:'password',r:1};
+  app.innerHTML=`<div class="wrap two"><section class="card pad"><h2>${t('login')}</h2>${fm('login',[ef,pf],{},t('login'))}</section><section class="card pad"><h2>${t('signup')}</h2><p class="mut">${t('schoolOnly')}</p>${fm('signup',[{k:'full_name',l:t('fullName'),r:1},{k:'study_year',l:t('level'),t:'select',o:LV(),r:1},ef,pf],{},t('signup'))}</section></div>`;return}
+ const[rq,rt]=await Promise.all([ok(sb.from('resource_requests').select('*').eq('user_id',me.id).order('created_at',{ascending:false})),ok(sb.from('ratings').select('*,places(name)').eq('user_id',me.id).order('created_at',{ascending:false}))]);
+ app.innerHTML=`<div class="wrap narrow"><div class="row sp"><h1>${esc(prof?.full_name||me.email)}</h1><button class="btn gh" data-a="out">${t('logout')}</button></div>${prof?.suspended?`<p class="note bad">${t('susp')}</p>`:''}${prof?.role=='admin'?`<p><a class="btn or" href="#/admin">${t('admin')}</a></p>`:''}
+ <h2>${t('myReq')}</h2>${rq.length?`<div class="stk">${rq.map(r=>`<div class="card pad row sp"><div><b>${esc(r.title)}</b><div class="mut">${esc(r.admin_note||'')}</div></div><span class="badge ${r.status}">${t(r.status)}</span></div>`).join('')}</div>`:`<p class="empty">${t('empty')}</p>`}
+ <h2>${t('myRat')}</h2>${rt.length?`<div class="stk">${rt.map(r=>`<div class="card pad row sp"><div><b>${esc(r.places?.name)}</b> <span class="st">${'★'.repeat(r.stars)}</span><div class="mut">${esc(r.comment||'')}${r.status=='hidden'?' · '+t('hiddenN'):''}</div></div><button class="btn sm bad" data-a="del" data-t="ratings" data-v="${r.id}">${t('delete')}</button></div>`).join('')}</div>`:`<p class="empty">${t('empty')}</p>`}</div>`}
+
+const AD={},AT=['overview','requests','resources','places','ratings','users','ann'];
+async function admin([tab='overview']){
+ if(prof?.role!='admin'){app.innerHTML=`<div class="wrap"><p class="note bad">${t('denied')}</p></div>`;return}
+ app.innerHTML=`<div class="wrap"><h1>${t('admin')}</h1><div class="tabs">${AT.map(k=>`<a class="${k==tab?'on':''}" href="#/admin/${k}">${t(k)}</a>`).join('')}</div><div id="pane">${spin}</div></div>`;
+ await AD[tab]($('#pane'))}
+AD.overview=async p=>{const[s,lg]=await Promise.all([ok(sb.rpc('admin_stats')),ok(sb.from('audit_logs').select('*').order('created_at',{ascending:false}).limit(12))]);
+ p.innerHTML=`<div class="stats">${[['st_students',s.students],['st_pending',s.pending],['st_res',s.resources],['places',s.places],['ratings',s.ratings]].map(([k,v])=>`<div class="card pad stat"><b>${v}</b><span>${t(k)}</span></div>`).join('')}</div><h3>${t('recent')}</h3><ul class="log">${lg.map(l=>`<li>${new Date(l.created_at).toLocaleString(lang)} · ${esc(l.action)} · ${esc(l.entity)} · ${esc(l.details?.label||'')}</li>`).join('')}</ul>`};
+AD.requests=async p=>{const st=AD.st||'pending',q=sb.from('resource_requests').select('*,profiles(full_name,email)').order('created_at',{ascending:false}).limit(100);
+ const rows=AD.rq=await ok(st=='all'?q:q.eq('status',st));
+ p.innerHTML=`<div class="chips">${['pending','approved','rejected','archived','all'].map(k=>`<button class="chip${st==k?' on':''}" data-a="rst" data-v="${k}">${t(k=='all'?'all':k)}</button>`).join('')}</div>${rows.length?`<div class="stk">${rows.map(r=>`<article class="card pad"><div class="row sp"><b>${esc(r.title)}</b><span class="badge ${r.status}">${t(r.status)}</span></div><p>${esc(r.description||'')}</p><p class="mut">${esc(r.profiles?.full_name)} · <a href="mailto:${esc(r.profiles?.email)}">${esc(r.profiles?.email)}</a> · ${t('c_'+r.category)} · ${esc(r.level)}${r.module?' · '+esc(r.module):''}${r.contact?' · '+esc(r.contact):''}</p><div class="row">${r.status=='pending'?`<button class="btn sm or" data-a="appr" data-v="${r.id}">${t('approvePub')}</button><button class="btn sm bad" data-a="rej" data-v="${r.id}">${t('reject')}</button>`:''}${r.status!='archived'?`<button class="btn sm gh" data-a="upd" data-t="resource_requests" data-k="status" data-x="archived" data-v="${r.id}">${t('archive')}</button>`:''}<button class="btn sm bad" data-a="del" data-t="resource_requests" data-v="${r.id}">${t('delete')}</button></div></article>`).join('')}</div>`:`<p class="empty">${t('empty')}</p>`}`};
+AD.resources=async p=>{const rows=AD.rs=await ok(sb.from('resources').select('*').order('created_at',{ascending:false}).limit(200));
+ p.innerHTML=`<p><button class="btn or" data-a="newres">+ ${t('newItem')}</button></p><div class="stk">${rows.map(r=>`<article class="card pad row sp"><div><b>${esc(r.title)}</b><div class="mut">${t('c_'+r.category)} · ${esc(r.level)} · ${t(r.visibility=='public'?'public':'stud')} · ${r.published?t('published'):t('draft')}</div></div><div class="row"><button class="btn sm gh" data-a="editres" data-v="${r.id}">${t('edit')}</button><button class="btn sm gh" data-a="upd" data-t="resources" data-k="published" data-x="${!r.published}" data-v="${r.id}">${r.published?t('unpub'):t('publish')}</button><button class="btn sm bad" data-a="del" data-t="resources" data-p="${esc(r.file_path)}" data-v="${r.id}">${t('delete')}</button></div></article>`).join('')||`<p class="empty">${t('empty')}</p>`}</div>`};
+AD.places=async p=>{const c=AD.pc||cats[0].slug,rows=AD.pl=await ok(sb.from('places').select('*').eq('category',c).order('name').limit(300));
+ p.innerHTML=`<div class="chips">${cats.map(x=>`<button class="chip${x.slug==c?' on':''}" data-a="pc" data-v="${x.slug}">${esc(L(x.tr).name)}</button>`).join('')}</div><p><button class="btn or" data-a="pform">+ ${t('newItem')}</button></p><div class="stk">${rows.map(r=>`<article class="card pad row sp"><div><b>${esc(r.name)}</b><div class="mut">${esc(r.address||'')} ${tp(r)}</div></div><div class="row"><button class="btn sm gh" data-a="pform" data-v="${r.id}">${t('edit')}</button><button class="btn sm bad" data-a="del" data-t="places" data-v="${r.id}">${t('delete')}</button></div></article>`).join('')||`<p class="empty">${t('empty')}</p>`}</div>`};
+AD.ratings=async p=>{const rows=await ok(sb.from('ratings').select('*,places(name)').order('created_at',{ascending:false}).limit(200));
+ p.innerHTML=rows.length?`<div class="stk">${rows.map(r=>`<article class="card pad row sp"><div><b>${esc(r.places?.name)}</b> <span class="st">${'★'.repeat(r.stars)}</span> <span class="mut">${esc(r.author_name||'')}</span><div>${esc(r.comment||'')}</div></div><div class="row"><button class="btn sm gh" data-a="upd" data-t="ratings" data-k="status" data-x="${r.status=='visible'?'hidden':'visible'}" data-v="${r.id}">${r.status=='visible'?t('hide'):t('show')}</button><button class="btn sm bad" data-a="del" data-t="ratings" data-v="${r.id}">${t('delete')}</button></div></article>`).join('')}</div>`:`<p class="empty">${t('empty')}</p>`};
+AD.users=async p=>{const rows=await ok(sb.from('profiles').select('*').order('created_at',{ascending:false}).limit(300));
+ p.innerHTML=`<div class="stk">${rows.map(u=>`<article class="card pad row sp"><div><b>${esc(u.full_name)}</b><div class="mut">${esc(u.email)} · ${esc(u.study_year||'')}</div></div><div class="row"><select data-u="role" data-id="${u.id}" aria-label="${t('role')}"><option value="student"${u.role=='student'?' selected':''}>${t('student')}</option><option value="admin"${u.role=='admin'?' selected':''}>${t('adminR')}</option></select><label class="row"><input type="checkbox" data-u="suspended" data-id="${u.id}" style="width:auto;min-height:0"${u.suspended?' checked':''}>${t('suspended')}</label></div></article>`).join('')}</div>`};
+AD.ann=async p=>{const rows=AD.an=await ok(sb.from('announcements').select('*').order('published_at',{ascending:false}).limit(50));
+ p.innerHTML=`<p><button class="btn or" data-a="newann">+ ${t('newItem')}</button></p><div class="stk">${rows.map(a=>`<article class="card pad row sp"><div><b>${esc(a.tr.fr?.title)}</b><div class="mut">${esc(a.tr.fr?.body)}</div></div><button class="btn sm bad" data-a="del" data-t="announcements" data-v="${a.id}">${t('delete')}</button></article>`).join('')||`<p class="empty">${t('empty')}</p>`}</div>`};
+
+const upload=async f=>{if(f.size>10485760)throw Error(t('big'));const p=crypto.randomUUID()+'-'+f.name.replace(/[^\w.\-]/g,'_');await ok(sb.storage.from('resources').upload(p,f,{contentType:f.type}));return p};
+function resForm(r={},rq){
+ mform(t(r.id?'edit':'approvePub'),[{k:'title',l:t('title'),r:1},{k:'description',l:t('desc'),t:'textarea'},{k:'category',l:t('cat'),t:'select',o:CATS(),r:1},{k:'level',l:t('level'),t:'select',o:LV(),r:1},{k:'module',l:t('module')},{k:'visibility',l:t('vis'),t:'select',o:[['students',t('stud')],['public',t('public')]]},{k:'file',l:t('file'),t:'file',r:!r.id}],r,async v=>{
+  const f=v.file,row={title:v.title,description:v.description||null,category:v.category,level:v.level,module:v.module||null,visibility:v.visibility,published:true};
+  if(f&&f.size){row.file_path=await upload(f);row.file_name=f.name;row.mime=f.type;row.size_bytes=f.size}
+  if(r.id){await ok(sb.from('resources').update(row).eq('id',r.id));if(row.file_path&&r.file_path)await sb.storage.from('resources').remove([r.file_path])}
+  else{const n=await ok(sb.from('resources').insert(row).select().single());if(rq)await ok(sb.from('resource_requests').update({status:'approved',resource_id:n.id}).eq('id',rq))}})}
+
+const A={
+ x:shut,out:async()=>{await sb.auth.signOut();location.hash='#/'},
+ cat:async v=>{D.cat=v;if(!cats.find(c=>c.slug==v).has_price)D.max='';await dir()},
+ more:async()=>{D.off=D.rows.length;await fetchPlaces(false)},
+ dl:async v=>{const r=RS.find(x=>x.id==v),d=await ok(sb.storage.from('resources').createSignedUrl(r.file_path,120));open(d.signedUrl,'_blank','noopener')},
+ open:async v=>{const p=D.rows.find(x=>x.id==v),rs=await ok(sb.from('ratings').select('*').eq('place_id',v).order('created_at',{ascending:false})),vis=rs.filter(r=>r.status=='visible'),mine=me&&rs.find(r=>r.user_id==me.id),ds=Ld(p.description);
+  modal(`<h2>${esc(p.name)}</h2><p class="mut">${esc(p.address||'')} ${tp(p)}</p>${ds?`<p>${esc(ds)}</p>`:''}<div class="row">${stars(p)}${p.phone?`<a class="chip" href="tel:${esc(p.phone)}">${t('call')}</a>`:''}<a class="chip" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name+' '+(p.address||''))}">${t('onMap')}</a></div>
+  ${prof&&!prof.suspended?`<form data-f="rate" data-id="${v}" class="fm" style="margin-top:14px"><b>${t('yourRating')}</b><div class="rs">${[5,4,3,2,1].map(n=>`<input type="radio" id="s${n}" name="stars" value="${n}" required${mine?.stars==n?' checked':''}><label for="s${n}">★</label>`).join('')}</div>${mine?.status=='hidden'?`<p class="note">${t('hiddenN')}</p>`:''}<label>${t('comment')}<textarea name="comment" rows="2" maxlength="1000">${esc(mine?.comment)}</textarea></label><div class="row"><button class="btn or">${t('send')}</button>${mine?`<button type="button" class="btn bad" data-a="del" data-t="ratings" data-v="${mine.id}">${t('delete')}</button>`:''}</div></form>`:`<p class="note">${t('loginToRate')} <a href="#/account" data-a="x">${t('login')}</a></p>`}
+  ${vis.map(r=>`<div class="rv"><span class="st">${'★'.repeat(r.stars)}</span> <b>${esc(r.author_name||'')}</b><div>${esc(r.comment||'')}</div></div>`).join('')}`)},
+ rst:v=>{AD.st=v;route()},pc:v=>{AD.pc=v;route()},
+ appr:v=>{const r=AD.rq.find(x=>x.id==v);resForm({title:r.title,description:r.description,category:r.category,level:r.level,module:r.module},r.id)},
+ rej:async v=>{const n=prompt(t('note'));if(n===null)return;await ok(sb.from('resource_requests').update({status:'rejected',admin_note:n}).eq('id',v));route()},
+ upd:async(v,el)=>{let x=el.dataset.x;if(x=='true')x=true;if(x=='false')x=false;await ok(sb.from(el.dataset.t).update({[el.dataset.k]:x}).eq('id',v));route()},
+ del:async(v,el)=>{if(!confirm(t('confirm')))return;const tb=el.dataset.t;await ok(sb.from(tb).delete().eq('id',v));if(el.dataset.p)await sb.storage.from('resources').remove([el.dataset.p]);shut();if(tb=='ratings'&&D.rows.length)await fetchPlaces(true,D.rows.length);route()},
+ newres:()=>resForm(),editres:v=>resForm(AD.rs.find(x=>x.id==v)),
+ pform:v=>{const r=AD.pl.find(x=>x.id==v)||{category:AD.pc||cats[0].slug},d=r.description||{};
+  mform(t(r.id?'edit':'newItem'),[{k:'name',l:t('name'),r:1},{k:'category',l:t('cat'),t:'select',o:cats.map(c=>[c.slug,L(c.tr).name]),r:1},{k:'address',l:t('addr')},{k:'price_min',l:t('pmin'),t:'number'},{k:'price_max',l:t('maxP'),t:'number'},{k:'phone',l:t('phone')},{k:'d_fr',l:t('desc')+' (FR)',t:'textarea'},{k:'d_en',l:t('desc')+' (EN)',t:'textarea'},{k:'d_ar',l:t('desc')+' (AR)',t:'textarea'}],{...r,d_fr:d.fr,d_en:d.en,d_ar:d.ar},async x=>{
+   const row={name:x.name,category:x.category,address:x.address||null,price_min:x.price_min?+x.price_min:null,price_max:x.price_max?+x.price_max:null,phone:x.phone||null,description:{fr:x.d_fr,en:x.d_en,ar:x.d_ar}};
+   await ok(r.id?sb.from('places').update(row).eq('id',r.id):sb.from('places').insert(row))})},
+ newann:()=>mform(t('newItem'),['fr','en','ar'].flatMap(l=>[{k:'t_'+l,l:t('title')+' ('+l.toUpperCase()+')',r:1},{k:'b_'+l,l:t('desc')+' ('+l.toUpperCase()+')',t:'textarea',r:1}]),{},async x=>{
+  await ok(sb.from('announcements').insert({tr:Object.fromEntries(['fr','en','ar'].map(l=>[l,{title:x['t_'+l],body:x['b_'+l]}]))}))})};
+const S={
+ gs:(f,v)=>{location.hash='#/guide?q='+encodeURIComponent(v.q)},
+ dirf:async(f,v)=>{Object.assign(D,{q:v.q,loc:v.loc,sort:v.sort,max:v.max||''});await fetchPlaces(true)},
+ mf:async(f,v)=>{await MF(v);shut();toast(t('saved'));route()},
+ login:async(f,v)=>{await ok(sb.auth.signInWithPassword({email:v.email,password:v.password}))},
+ signup:async(f,v)=>{let d;try{d=await ok(sb.auth.signUp({email:v.email,password:v.password,options:{data:{full_name:v.full_name,study_year:v.study_year}}}))}catch(e){throw Error(/database/i.test(e.message)?t('domainErr'):e.message)}if(!d.session)toast(t('checkMail'))},
+ req:async(f,v)=>{await ok(sb.from('resource_requests').insert({user_id:me.id,title:v.title,description:v.description,category:v.category,level:v.level,module:v.module||null,contact:v.contact||null}));f.reset();toast(t('reqSent'))},
+ rate:async(f,v)=>{const id=+f.dataset.id;await ok(sb.from('ratings').upsert({place_id:id,user_id:me.id,stars:+v.stars,comment:v.comment||null},{onConflict:'place_id,user_id'}));toast(t('saved'));await fetchPlaces(true,Math.max(12,D.rows.length));A.open(id)}};
+
+document.addEventListener('click',go(async e=>{const el=e.target.closest('[data-a]');if(!el||!A[el.dataset.a])return;if(el.tagName!='A')e.preventDefault();await A[el.dataset.a](el.dataset.v,el)}));
+document.addEventListener('submit',go(async e=>{const f=e.target.closest('[data-f]');if(!f)return;e.preventDefault();await S[f.dataset.f](f,vals(f))}));
+document.addEventListener('change',go(async e=>{const el=e.target;
+ if(el.id=='lg'){lang=el.value;localStorage.setItem('lang',lang);chrome();route()}
+ else if(el.dataset.u){await ok(sb.from('profiles').update({[el.dataset.u]:el.type=='checkbox'?el.checked:el.value}).eq('id',el.dataset.id));toast(t('saved'))}}));
+document.addEventListener('keydown',e=>{if(e.key=='Escape')shut()});
+
+const PG={home,guide,dir,help,account,admin};
+async function route(){
+ const[p,q]=location.hash.slice(2).split('?'),a=p.split('/'),r=PG[a[0]]?a[0]:'home';
+ document.querySelectorAll('[data-nav]').forEach(x=>x.classList.toggle('on',x.dataset.nav==r));
+ app.innerHTML=spin;scrollTo(0,0);await go(PG[r])(a.slice(1),new URLSearchParams(q||''))}
+async function loadProf(s){me=s?.user||null;prof=me?await ok(sb.from('profiles').select('*').eq('id',me.id).maybeSingle()):null}
+(async()=>{
+ chrome();window.addEventListener('hashchange',route);
+ if(!sb){app.innerHTML=`<div class="wrap"><p class="note">${t('cfg')}</p></div>`;return}
+ try{const{data:{session}}=await sb.auth.getSession();await loadProf(session);
+  [cats,guides]=await Promise.all([ok(sb.from('place_categories').select('*').order('sort')),ok(sb.from('guides').select('*').order('sort'))]);
+  sb.auth.onAuthStateChange((ev,s)=>{if(ev=='INITIAL_SESSION'||ev=='TOKEN_REFRESHED'||s?.user?.id===me?.id)return;setTimeout(async()=>{await loadProf(s);chrome();route()},0)});
+  chrome();route()}catch(e){console.error(e);app.innerHTML=`<div class="wrap"><p class="note bad">${esc(e.message||t('error'))}</p></div>`}})();
+</script>
+</body>
+</html>
